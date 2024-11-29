@@ -1,0 +1,149 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--stone600);
+    font-size: 1rem;
+    margin: 0 30px;
+    background-color: var(--stone100);
+}
+
+#div-body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+h2 {
+    font-family: YoungSerif, serif;
+    color: var(--brown800);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#preparation-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#preparation-text {
+    background-color: var(--rose50);
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+li {
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+li::marker {
+    color: var(--brown800);
+    font-weight: bold;
+}
+
+#preparation-box li::marker {
+    color: var(--rose800);
+}
+
+#preparation-text h2 {
+    font-family: sans-serif;
+    color: var(--rose800);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.bold-word {
+    font-weight: bold;
+}
+
+#mainFooter {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    font-size: .75em;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--stone600);
+}
+
+h1 {
+    font-family: YoungSerif, serif;
+    font-size: 2.5em;
+    color: var(--stone900);
+}
+
+#omelette {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre les lignes */
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espace entre les colonnes */
+  }
+  
+  .name, .value {
+    flex: 1; /* Ajuste la largeur selon tes besoins */
+  }
+  
+#nutrition hr {
+    width: 100%; /* Assure une largeur complète */
+    margin-top: 5px; /* Espace au-dessus */
+}
+
+#nutrition .name {
+    margin-left: 30px;
+}
+
+#nutrition .value {
+    font-weight: bold;
+    color: var(--brown800);
+}
