@@ -18,7 +18,6 @@ body {
     font-family: "Outfit", sans-serif;
     color: var(--stone600);
     font-size: 1rem;
-    margin: 0 150px; /*Ici pour changer la bordure beige sur les côtés*/
     background-color: var(--stone100);
 }
 
@@ -26,8 +25,6 @@ body {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    padding: 0 40px;
-    margin: 100px 0;
     border-radius: 30px;
 }
 
@@ -149,4 +146,37 @@ hr {
 #nutrition .value {
     font-weight: bold;
     color: var(--brown800);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        background-color: var(--white); /*Pour la couleur derrière le footer*/
+    }
+    #div-body {
+        margin: 0;
+        border-radius: 0;
+    }
+    #omelette {
+        border-radius: 0;
+        margin: 0; /*Enleve la bande beige en haut*/
+    }
+    main {
+        padding-bottom: 20px;
+    }
+    #div-body-text {
+        padding: 0 40px; /*Ecart entre le texte et la bordure blanche-beige*/
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 150px; /*Ici pour changer la bordure beige sur les côtés*/
+    }
+    #div-body {
+        margin: 100px 0; /*Ici pour changer la bordure beige en haut et en bas*/
+        padding: 0 40px; /*Ecart entre le texte et la bordure blanche-beige*/
+    }
 }
