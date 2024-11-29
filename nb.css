@@ -104,7 +104,8 @@ li::marker {
 }
 
 h1 {
-    font-family: "YoungSerif" , serif;
+    font-family: "Young Serif" , serif;
+    font-weight: normal;
     font-size: 2.5em;
     color: var(--stone900);
 }
